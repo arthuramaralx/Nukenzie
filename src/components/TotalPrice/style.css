@@ -1,0 +1,34 @@
+.totalValue-box{
+    display: flex;
+
+    width: 410px;
+    position: absolute; 
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.totalValue-left{
+
+width:  200px;
+color: #212529;
+}
+.totalValue-right{
+    width: 100px;
+    margin-left: 100px;
+    padding-top: 10px;
+
+    color: #FD377E;
+
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+}
+
+@media screen and (max-width: 320px) {
+  
+    .totalValue-box {
+      margin-left: 110px;
+    }
+  
+  }

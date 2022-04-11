@@ -1,17 +1,22 @@
 .productsCard{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+   list-style: none;
     border: 1px solid rgb(230, 223, 223);
     border-radius: 8px;
     justify-content: space-around;
-    margin-left: ;
+    position: relative;
 
 }
+
+
+.productsCard-right {
+    padding-top: 20px;
+
+    }
+
 .Transaction-description {
-position: relative;
-right: 20px;
-bottom: 10px;
+
+
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
@@ -20,9 +25,9 @@ color: #212529;
 }
 
 .Transaction-type {  
-position: relative;
-right: 201px;
-top: 35px;
+
+
+
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -30,5 +35,5 @@ line-height: 22px;
 color: #5B6166;
 }
 .Transaction-value {
-
+    margin-top: 10px;
 }

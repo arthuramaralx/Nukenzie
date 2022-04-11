@@ -1,19 +1,33 @@
 .Header {
     margin-left: 30px;
-    margin-right: ;
-display: flex;
-flex-direction: row;
-width: 599px;
+    width: 599px;
+    
 }
+
 .Header-button {
-display: block;
-margin-top: 10px;
-margin-left: 59rem;
+
+    margin-top: px;
+    margin-left: 85vw;
 
     height: 30px;
-    width: 70px;
+    width: 64px;
     border-radius: 8px;
     border: none;
-    background-color: #FD377E;
-    color: white;
+    background-color: #E9ECEF;
+    color: #5B6166;
 }
+.Header h1 {
+    margin-bottom: -20px;
+}
+    .Header span {
+        color: #FD377E;
+    }
+
+    @media screen and (max-width: 320px) {
+
+        .Header-button {
+            margin-left: 150vw;
+            
+        }
+      
+      }
