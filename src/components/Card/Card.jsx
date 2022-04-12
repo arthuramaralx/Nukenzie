@@ -1,6 +1,22 @@
 
 import "./style.css"
-export default function Card({transaction}){
+import Trash  from "../../assets/Thrash.svg"
+export default function Card({transaction, setListTransactions, listTransactions, filteredListTransactions, setfilteredListTransactions}){
+
+
+function removeHandler(){
+let removeCount = 1
+if(removeCount === 1 ){
+    console.log(filteredListTransactions)
+    console.log(setListTransactions)
+    setListTransactions(listTransactions.filter((item)=> item !== transaction))
+
+        setfilteredListTransactions(filteredListTransactions.filter((item)=> item !== transaction))
+    
+    removeCount--
+}
+
+}
 
     return(
 <>
@@ -21,7 +37,11 @@ export default function Card({transaction}){
     <span className="Transaction-value">
         {transaction.value} R$
     </span>
-
+        <span>
+            <button onClick={removeHandler} >
+            <img src={Trash} alt="" />
+            </button>
+        </span>
 </div>
 
     </li>

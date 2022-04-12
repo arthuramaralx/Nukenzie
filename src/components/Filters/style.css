@@ -1,0 +1,44 @@
+.filters-Box {
+display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: 110px;
+    margin-top:  20px;
+    color: #212529;
+    
+}
+.resumo {
+    margin-right: 100px;
+}
+.filters-Box button {
+    color: #5B6166;
+    background-color:  #E9ECEF;
+    margin-left: 10px;
+    height: 38px;
+    width: 70px;
+    border: none;
+    border-radius: 8px;
+}
+
+.filters-Box button:focus {
+    color: #FFFFFF;
+    background-color: #FD377E;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .filters-Box {
+        margin-left: 160px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 320px) {
+    .filters-Box {
+        margin-left: 110px;
+    }
+  
+  }

@@ -1,10 +1,15 @@
+:root {
+  background-color: #FFFFFF;
+}
+button {
+  cursor: pointer;
+}
+
 .Body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
-
 
 
 .mainPage-left {

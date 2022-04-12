@@ -2,8 +2,7 @@ import "./style.css"
 import { useState } from "react"
 export default function TotalPrice({totalPrice}){
 
-console.log(totalPrice)
-  
+
     return(
         <div className="totalValue-box">
      

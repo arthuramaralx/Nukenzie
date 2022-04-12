@@ -3,3 +3,29 @@
     flex-direction: column;
     width: 500px;
 }
+.emptyTransactionLists {
+    margin-left: 120px;
+    color: #5B6166;
+}
+
+
+
+@media screen and (max-width: 768px) {
+ 
+    .emptyTransactionLists {
+        margin-left: 200px;
+    }
+    
+
+  }
+  
+  @media screen and (max-width: 320px) {
+  
+    
+    .emptyTransactionLists {
+        margin-left: 100px;
+    }
+    
+
+  
+  }

@@ -5,15 +5,27 @@
     border-radius: 8px;
     justify-content: space-around;
     position: relative;
-
+    padding-bottom: 8px;
 }
 
-
+.productsCard-left {
+margin-right: 40px ;
+}
 .productsCard-right {
     padding-top: 20px;
+    margin-right: -50px;
 
     }
+.productsCard-right button {
+    background-color: #E9ECEF;
+    border: none;
+    border-radius: 2px;
+    padding-top: 4px;
+}
+.productsCard-right img {
 
+ width: 13px; 
+}
 .Transaction-description {
 
 
@@ -36,4 +48,5 @@ color: #5B6166;
 }
 .Transaction-value {
     margin-top: 10px;
+    margin-right: 40px;
 }
