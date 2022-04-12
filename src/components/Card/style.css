@@ -7,6 +7,14 @@
     position: relative;
     padding-bottom: 8px;
 }
+.cardExit{
+    border-left: 3px solid #E9ECEF;
+}
+
+.cardEntry {
+    border-left: 4px solid #03B898;
+
+}
 
 .productsCard-left {
 margin-right: 40px ;

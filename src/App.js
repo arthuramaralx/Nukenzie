@@ -13,6 +13,7 @@ function App() {
 
 
 
+const [filter, setFilter] = useState("Todos")
 const [filteredList, setFilteredList] = useState(false)
 const [filteredListTransactions, setfilteredListTransactions] = useState({})
 const [listTransactions, setListTransactions] = useState( [ ] )
@@ -26,7 +27,7 @@ if(y.type === "Saída"){
 }
 
 },0) 
-
+const newArray = listTransactions.filter(({type})=> (filter === "Todos") ? type !== "Todos" : type === filter )
 
   return (
     <>
@@ -41,10 +42,10 @@ if(y.type === "Saída"){
 
      <Form className="Form" listTransactions={listTransactions} setListTransactions={setListTransactions}/>
 <div>
-    <Filters listTransactions={listTransactions} setListTransactions={setListTransactions} filteredListTransactions={filteredListTransactions}
+    <Filters filter={filter} setFilter={setFilter} listTransactions={listTransactions} setListTransactions={setListTransactions} filteredListTransactions={filteredListTransactions}
     setfilteredListTransactions={setfilteredListTransactions} setFilteredList={setFilteredList} />
 
-     <List listTransactions={listTransactions} setListTransactions={setListTransactions} filteredList={filteredList} filteredListTransactions={filteredListTransactions}
+     <List newArray={newArray} listTransactions={listTransactions} setListTransactions={setListTransactions} filteredList={filteredList} filteredListTransactions={filteredListTransactions}
       setfilteredListTransactions={setfilteredListTransactions}/>
 </div>
 

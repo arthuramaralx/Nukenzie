@@ -3,8 +3,8 @@
 .landingPageBody {
     position: sticky;
     background-color:  #212529;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     color: #FFFFFF;
     display: flex;
     margin: auto auto;
@@ -46,13 +46,44 @@
 }
 
 
-@media screen and (max-width: 1100) {
-    .backGroundAplier {
-        width: 350vw;
+@media screen and (max-width: 1100px) {
+    .landingPageBody-right {
+       display: none;
     }
   
   }
   
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 768px) {
    
+    .landingPageBody-left {
+        padding-top: 70px;
+        margin-left: 18%;
+
+    
+    }
+    .landingPageBody button {
+
+        width: 200px;
+    
+    
+    }
+
+
   }
+
+  @media screen and (max-width: 320px) {
+    .landingPageBody-left {
+
+        width: 300px;
+        margin-left: 19%;
+        margin-right: 40px;
+    
+    }
+    .landingPageBody button {
+
+        width: 200px;
+        height: 48px;
+
+    
+    }
+}

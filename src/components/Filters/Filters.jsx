@@ -1,6 +1,6 @@
 
 import "./style.css"
-    export default function Filters({listTransactions, setListTransactions, filteredListTransactions, setfilteredListTransactions, setFilteredList }){
+    export default function Filters({listTransactions, filter, setFilter, setListTransactions, filteredListTransactions, setfilteredListTransactions, setFilteredList }){
 
 
     function filterHandler(event){
@@ -21,9 +21,9 @@ import "./style.css"
         <div>
             <div className="filters-Box">
                 <h3 className="resumo">Resumo financeiro</h3>
-                <button value="todos" onClick={filterHandler}>Todos</button>
-                <button value="entrada" onClick={filterHandler}>Entrada</button>
-                <button value="despesas" onClick={filterHandler}>Despesa</button>
+                <button value="todos" onClick={()=>setFilter('Todos')}>Todos</button>
+                <button value="entrada" onClick={()=>setFilter('Entrada')}>Entrada</button>
+                <button value="despesas" onClick={()=>setFilter('Saída')}>Despesa</button>
             </div>
 
 

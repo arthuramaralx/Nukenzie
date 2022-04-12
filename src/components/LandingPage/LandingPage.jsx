@@ -11,7 +11,7 @@ export default function LandingPageComponent({isLoggedIn, setIsLoggedIn}){
             
             <div className="landingPageBody-left">
                 <h1><span>Nu</span> Kenzie</h1>
-                <p className="first-text">Centralize o &nbsp;&nbsp; controle das suas finanças</p>
+                <p className="first-text">Centralize o controle das suas finanças</p>
                 <p className="second-text">de forma rápida e segura</p>
                 <button onClick={()=>setIsLoggedIn(true)}>Iniciar</button>
             </div>

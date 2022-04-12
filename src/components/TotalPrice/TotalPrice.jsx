@@ -11,7 +11,7 @@ export default function TotalPrice({totalPrice}){
                 <p>O valor se refere ao saldo</p>
             </div>
             <div className="totalValue-right">
-                <span>R$ {totalPrice}</span>
+                <span>{Number(totalPrice).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span>
             </div>
         </div>
     )
